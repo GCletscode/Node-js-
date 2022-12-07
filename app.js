@@ -1,3 +1,8 @@
-for(let index=0;index<10;index++){
-    console.log(index);
-}
+const http=require("http");
+const server=http.createServer((req,res)=>{
+    res.write("Hello Node");
+    res.end();
+});
+
+
+server.listen(3000);
