@@ -1,0 +1,22 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GCletscode/Node-js-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GCletscode/Node-js-/issues"
+  },
+  "homepage": "https://github.com/GCletscode/Node-js-#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
