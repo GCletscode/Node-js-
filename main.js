@@ -2,7 +2,8 @@ const EventEmitter=require("events");
 const myEvent=new EventEmitter();
 const express=require("express");
 const app=express();
-const route=require("./routes/index.js");
+const router=require("./routes/index.js");
+app.set('view engine', 'pug');
 port=3001;
 
 app.listen(port,()=>{
@@ -13,7 +14,7 @@ myEvent.on("test-event",(data)=>{
     console.log("event is listening");
     console.log(data);
 });
-
-app.use(route);
+//Middleware
+app.use(router);
 
 

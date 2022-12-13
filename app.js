@@ -1,6 +1,5 @@
 const http=require("http");
 const fs=require("fs");
-const { homedir } = require("os");
 const PORT=4000;
 const server=http.createServer((req,res)=>{
     if(req.url=="/"){
